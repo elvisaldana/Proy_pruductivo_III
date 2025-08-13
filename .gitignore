@@ -1,0 +1,29 @@
+# Python / Streamlit
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
+*.env
+.venv/
+venv/
+ENV/
+.envrc
+
+# Datos/Modelos grandes
+data/
+datasets/
+*.csv
+*.parquet
+models/*.h5
+models/*.pt
+models/*.joblib
+models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
