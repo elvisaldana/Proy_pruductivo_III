@@ -5,6 +5,7 @@ from modules.estadisticas import mostrar_estadisticas
 from modules.eda import mostrar_eda
 from modules.modelado import mostrar_modelado
 from modules.dashboard import mostrar_dashboard
+from modules.riesgo_individual import mostrar_riesgo_individual
 
 # Sidebar con opciones de módulos
 st.sidebar.title("🔍 Menú Principal")
@@ -45,6 +46,9 @@ elif opcion == "Exploración de Datos (EDA)":
 
 elif opcion == "Entrenamiento del Modelo":
     modelo = mostrar_modelado(df)
+
+elif opcion == "Riesgo Individual":
+    mostrar_riesgo_individual(df)
     
 
 elif opcion == "Dashboard":
